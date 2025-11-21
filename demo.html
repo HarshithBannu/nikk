@@ -18,15 +18,33 @@
   </script>
 </head>
 <body>
+<center>
   <h2>Registration Form</h2>
   <form onsubmit="event.preventDefault(); registerUser();">
-    <label>Name:</label>
+    <label>Name      :  </label>
     <input type="text" id="name" placeholder="Enter your name"><br><br>
 
     <label>Phone Number:</label>
     <input type="text" id="phone" placeholder="Enter your phone number"><br><br>
+    <label for="email">Email :</label>
+    <input id="email" type="email" placeholder="enter your email" name="email"><br><br>
+    Gender :
+    <label for="1"><input type="radio"name="gender" id="101" value="m">Male</label>
+	<label for="2"><input  type="radio"name="gender" id="102" value="f">feMale</label>
+	<br><br>
+	Higher qualificatons :
+				<select name="qualification" id="qualification">
+						<option  value="ssc">SSC</option>
+						<option  value="diploma">diploma</option>
+						<option  value="inter">inter</option>
+						<option  value="masters">masters</option>
+						<option  value="mtech">mtech</option>
+						<option  value="ssc">others</option>
+					</select>
+					<br><br>
 
     <button type="submit">Register</button>
   </form>
+  </center>
 </body>
 </html>
